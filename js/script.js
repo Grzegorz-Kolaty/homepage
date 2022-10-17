@@ -1,3 +1,4 @@
+console.log("Ten kod jest juz w repozytorium GIT");
 let removePicture = document.querySelector(".remove__picture");
 let myPicture = document.querySelector(".my__picture");
 let lotteryButton = document.querySelector(".lottery__button");
