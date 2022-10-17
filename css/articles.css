@@ -1,0 +1,42 @@
+.articles {
+    display: block;
+}
+
+.job {
+    background-color: rgb(16, 21, 23);
+    color: rgb(104, 207, 199);
+    padding: 20px;
+}
+
+.job__title {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.interested {
+    background-color: #1D2327;
+    color: rgb(104, 207, 199);
+    padding: 20px;
+}
+
+.interested__title {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.hobby {
+    background-color: #2C3338;
+    color: rgb(104, 207, 199);
+    padding: 20px;
+}
+
+.hobby__title {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}

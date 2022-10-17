@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desing Pinnacle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/articles.css" rel="stylesheet">
+
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#job">Zawód</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#interested">Zainteresowania</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#hobby">Hobby</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="header">
+        <header>
+            <h1 class="header__welcome">Witam Cię na mojej stronie</h1>
+        </header>
+        <img class="my__picture" src="https://i.ibb.co/YXgjjXS/IMG-20220815-133402997.jpg" alt="Grzegorz Kolaty">
+        <figcaption class="my__pictureFigcaption">Grzegorz Kolaty</figcaption>
+    </section>
+
+    <main>
+        <article class="articles">
+            <section id="job">
+                <div class="job">
+                    <h2 class="job__title">Mam nadzieję, że programowanie to będzie moja nowa pasja</h2>
+                    <p>Co widać na załączonym zdjęciu <span class="focus__element">programowanie</span> to moja
+                        najnowsza
+                        pasja.
+                        Zostałem zachęcony do niej przez mojego przyjaciela oraz ujemny miesięczny
+                        <strong>budżet</strong>.
+                        Mam
+                        nadzieję, że kurs to
+                        nie fejk i że coś na tym zarobię.
+                    </p>
+                    <p><b>Dodatkową rzeczą jaką wykonałem na tej stronie jest możliwość usunięcia zdjęcia. Sprawdziłem,
+                            czy
+                            mogę
+                            nadać
+                            zdjęciu klasę a następnie <i>związać selektorem</i> i się udało :)</b>
+                    </p>
+                    <p>Poniżej kilka przycisków z użytymi przeze mnie metodami
+                    </p>
+                    <p>
+                        <button class="button__style lottery__button">Kliknij żeby wciąć udział w losowaniu!</button>
+                    </p>
+                    <p>
+                        <button class="button__style change__background">Zmień tło na <span class="theme__name">dziwny
+                                kolor</span>!</button>
+                    </p>
+                    <p>
+                        <button class="button__style remove__picture">Usuń zdjecie</button>
+                    </p>
+                </div>
+            </section>
+
+            <section id="interested">
+                <div class="interested">
+                    <h2 class="interested__title">Design wydaje się być super!</h2>
+                    <p><em>Silna wola i zdecydowanie to atrybuty ważne przy nauce ale ja akurat ich nie posiadam, co
+                            pragnę
+                            zaznaczyć XD</em>
+                        <br>
+                        Dopasowywanie do siebie kolorów jest znacznie trudniejszym zadaniem niż myślałem. Nawet jeżeli
+                        inspirowałem się inną stroną - odtworzenie tego to nie lada sztuka.
+                        <br>
+                        <strong>Wszystkie nagłówki a także nagłówki tabeli są jedną klasą co umożliwia edycję całego
+                            wyglądu
+                            strony, stylizując tylko jedną klasę CSS!</strong>
+                        <br>
+                        Zostawiam Ci ciekawostkę o rosnącej popularności języków programowania.
+                    </p>
+                    <table class="table">
+                        <caption class="table__caption">Ilość artykułów w latach</caption>
+                        <tr class="table__row">
+                            <th class="table__header" scope="col">Język/Rok</th>
+                            <th class="table__header" scope="col">2019</th>
+                            <th class="table__header" scope="col">2020</th>
+                            <th class="table__header" scope="col">2021</th>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__header" scope="row">Python</th>
+                            <td class="table__cell">3000</td>
+                            <td class="table__cell">8000</td>
+                            <td class="table__cell">10000</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__header" scope="row">JS</th>
+                            <td class="table__cell">2500</td>
+                            <td class="table__cell">6000</td>
+                            <td class="table__cell">8000</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__header" scope="row">Swift</th>
+                            <td class="table__cell">1000</td>
+                            <td class="table__cell">2000</td>
+                            <td class="table__cell">3000</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section id="hobby">
+                <div class="hobby">
+                    <h2 class="hobby__title">Gry komputerowe - ile to ja czasu wam poświęciłem?</h2>
+                    <p>Umieszczam to na końcu, gdyż jest to hobby, które nie imponuje <span class="focus__element"> płci
+                            przeciwnej. </span>Nie zmienia to faktu, że osiągnąłem co nieco w grach takich jak
+                        <strong>Wolrd
+                            of
+                            Warcraft</strong>.
+                        To tam spotkałem się po raz pierwszy z programowaniem gdyż gra udostępnia pisanie ograniczonych
+                        makr
+                        w
+                        LUA. Tło jest związane właśnie z uniwersum wspomnianej gry.
+                    </p>
+                    <p>
+                        Policz swoje BMI!
+                    </p>
+                    <form class="js-form">
+                        <fieldset>
+                            <legend>Twoje dane</legend>
+                            <p>
+                                <label>
+                                    Twój wzrost : <input class="js-height" type="number" min="1" step="any" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Twoja waga: <input class="js-weight" type="number" min="1" step="any" required>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Pole typu radio</legend>
+                            <p>
+                                <label>
+                                    Opcja 1
+                                    <input type="radio" value="opcja-1" name="radio" class="js-radio1">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Opcja 1
+                                    <input type="radio" value="opcja-1
+                            2" name="radio" class="js-radio2">
+                                </label>
+                            </p>
+                        </fieldset>
+                        <p>
+                            <button>Policz BMI</button>
+                        </p>
+                    </form>
+                    <p>Twoje BMI wynosi: <strong class="js-bmi"> N/A</strong></p>
+                </div>
+            </section>
+            <section id="nowy-akapit">
+                <div class="nowy-akapit">
+                    <h2 class="nowy-naglowek">Gry komputerowe - ile to ja czasu wam poświęciłem?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa eos velit, recusandae optio
+                        officiis, officia deserunt tempora at atque, error quam quos totam! Natus ea inventore dolores
+                        deleniti fuga?
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        Copyright 2022 YouCode Industries
+    </footer>
+
+</body>
+
+</html>
