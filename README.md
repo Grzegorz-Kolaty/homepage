@@ -1,6 +1,6 @@
 # Grzegorz Kolaty - my homepage #
 
-<img src="images/georgejpg" alt="drawing" width="200"/>
+<img src="images/george.jpg" alt="drawing" width="200"/>
 ## Demo
 https://grzegorz-kolaty.github.io/
 ## Opis
