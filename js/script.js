@@ -1,41 +1,48 @@
-console.log("Ten kod jest juz w repozytorium GIT");
-let removePicture = document.querySelector(".remove__picture");
-let myPicture = document.querySelector(".my__picture");
-let lotteryButton = document.querySelector(".lottery__button");
-let changeBackground = document.querySelector(".change__background");
-let themeName = document.querySelector(".theme__name");
+{
+    const welcome = () => {
+        console.log("Ten kod jest juz w repozytorium GIT");
+    };
+    welcome();
 
-let heightElement = document.querySelector(".js-height");
-let weightElement = document.querySelector(".js-weight");
-let formElement = document.querySelector(".js-form");
-let bmiElement = document.querySelector(".js-bmi");
+    const lottery = () => {
+        const lotteryButton = document.querySelector(".js-lottery");
+        lotteryButton.addEventListener("click", () => {
+            alert('Brzydkie Okienko z Errorem, wygrałeś Iphone 90000')
+        });
+    };
+    lottery();
 
-formElement.addEventListener("input", () => {
-    let height = heightElement.value;
-    let weight = weightElement.value;
-    let bmi = weight / ((height / 100) ** 2);
+    const removePicture = () => {
+        const myPicture = document.querySelector(".js-myPicture");
+        const removeButton = document.querySelector(".js-removePicture");
+        removeButton.addEventListener("click", () => { myPicture.remove(); });
+    };
+    removePicture();
 
-    console.log(bmi);
+    const toggleBackground = () => {
+        const container = document.querySelector(".container");
+        const nextColorName = document.querySelector(".js-nextColorName");
+        container.classList.toggle("container--strange");
+        nextColorName.innerText = container.classList.contains("container--strange") ? "szary" : "dziwny";
+    };
 
-    bmiElement.innerText = bmi.toFixed(2);
-});
+    const init = () => {
+        const changeBackgroundButton = document.querySelector(".js-changeBackground");
+        changeBackgroundButton.addEventListener("click", toggleBackground);
+    };
+    init();
 
-
-removePicture.addEventListener("click", () => {
-    myPicture.remove();
-});
-
-lotteryButton.addEventListener("click", () => {
-    alert('Brzydkie Okienko z Errorem, wygrałeś Iphone 90000')
-});
-
-changeBackground.addEventListener("click", () => {
-    let container = document.querySelector(".container");
-    container.classList.toggle("change__background");
-
-    if (container.classList.contains("change__background")) {
-        themeName.innerText = "lepszy kolor";
-    } else {
-        themeName.innerText = "dziwny kolor";
-    }
-});
+    const calcBmi = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("input", () => {
+            const heightElement = document.querySelector(".js-height");
+            const weightElement = document.querySelector(".js-weight");
+            const bmiElement = document.querySelector(".js-bmi");
+            const height = heightElement.value;
+            const weight = weightElement.value;
+            const bmi = weight / ((height / 100) ** 2);
+            bmiElement.innerText = bmi.toFixed(2);
+        });
+    };
+    calcBmi();
+}

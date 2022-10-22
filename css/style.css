@@ -14,11 +14,11 @@ html {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     margin: 0px auto;
-    text-align: center;
     padding: 0px;
+    text-align: center;
 }
 
-.change__background {
+.container--strange {
     background-color: rgb(56, 54, 54);
 }
 
@@ -42,7 +42,6 @@ html {
     flex-flow: column;
     margin: auto;
     max-width: 250px;
-
 }
 
 .my__pictureFigcaption {
@@ -53,6 +52,7 @@ html {
 .focus__element {
     color: white;
     font-weight: bolder;
+
 }
 
 .button__style {
