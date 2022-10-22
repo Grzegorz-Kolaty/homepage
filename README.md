@@ -9,11 +9,12 @@ Poniżej parę informacji o mnie, w czym programuję i co znajdziesz na moim pro
 ## Interesting things
 
 Moja strona internetowa znajduje się [tutaj](https://grzegorz-kolaty.github.io/homepage/).
+Konwerter walut znajdziesz [o tutaj!](https://grzegorz-kolaty.github.io/currency-converter/).
 
 ## Langs
 
 ```JavaScript
-to robię aktualnie :-)
+tutaj programuję aktualnie :-)
 
 Zajrzyj do wewnątrz mojej strony jak jesteś deweloperem :)
 
